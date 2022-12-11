@@ -1,5 +1,5 @@
 :root {
-  --background-color: #e5e5e5;
+  --background-color: #fff;
 
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
@@ -109,7 +109,12 @@ body {
 
 /* --------Advantages section------ */
 /* --------Examples section------ */
+
 /* --------Team section------ */
+.team-photo,
+.works-items {
+  background-color: var(--primary-white-color);
+}
 
 /* -----------Portfolio-------- */
 .button-portfolio {
@@ -131,6 +136,7 @@ body {
 .works-text {
   color: #f4f4fd;
 }
+
 /* --------Fotter------ */
 .footer > .logo {
   color: #f4f4fd;
