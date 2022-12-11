@@ -1,10 +1,13 @@
 :root {
+  --background-color: #e5e5e5;
+
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
-  --link-color: #2e2f42;
+  --accent-color: #4d5ae5;
+
   --primary-white-color: #fff;
-  --accent-color: #fff;
-  --background-color: #e5e5e5;
+
+  --link-color: #2e2f42;
 }
 
 body {
@@ -26,9 +29,42 @@ body {
 }
 
 .button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.04em;
 }
 
-/* LOGO */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.advantages-title,
+.team-name,
+.works-items {
+  color: var(--title-text-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.team-title,
+.examples-title {
+  color: var(--title-text-color);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+/* ----------------LOGO------------ */
 .logo {
   color: #2e2f42;
   font-family: "Raleway";
@@ -39,10 +75,14 @@ body {
   letter-spacing: 0.03em;
 }
 .logo-part {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
-/* HEADER */
+.logo {
+  text-transform: uppercase;
+}
+
+/* ------------HEADER -------------------*/
 .header-link {
   color: var(--link-color);
   font-weight: 600;
@@ -55,3 +95,47 @@ body {
 }
 
 /* --------HERO SECTION------ */
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+}
+.button-hero {
+  color: #fff;
+  background-color: var(--accent-color);
+  line-height: 1.18;
+}
+
+/* --------Advantages section------ */
+/* --------Examples section------ */
+/* --------Team section------ */
+
+/* -----------Portfolio-------- */
+.button-portfolio {
+  color: var(--accent-color);
+  background-color: #f4f4fd;
+  line-height: 1.5;
+}
+
+.button.button-portfolio:hover,
+.button.button-portfolio:focus {
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+.works-sphere {
+  color: var(--primary-text-color);
+}
+
+.works-text {
+  color: #f4f4fd;
+}
+/* --------Fotter------ */
+.footer > .logo {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  color: #e7e9fc;
+}
