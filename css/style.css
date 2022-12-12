@@ -9,7 +9,11 @@
 
   --primary-white-color: #fff;
 
-  --link-color: #2e2f42;
+  --link-def-color: #2e2f42;
+  --link-hov-color: #434455;
+
+  --bt-bg-color: #4d5ae5;
+  --bt-acc-color: #000000;
 }
 
 body {
@@ -36,6 +40,9 @@ body {
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.04em;
+
+  border-style: none;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -49,24 +56,8 @@ body {
   overflow: hidden;
 }
 
-.advantages-title,
-.team-name,
-.works-items {
-  color: var(--title-text-color);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.team-title,
-.examples-title {
-  color: var(--title-text-color);
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.1;
-}
-
 /* ----------------LOGO------------ */
+
 .logo {
   color: #2e2f42;
   font-family: "Raleway";
@@ -85,9 +76,22 @@ body {
 }
 
 /* ------------HEADER -------------------*/
+
 .header-link {
-  color: var(--link-color);
+  color: var(--link-def-color);
   font-weight: 600;
+}
+.header-link.current {
+  color: var(--accent-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--link-hov-color);
+}
+
+.header-link:active {
+  color: var(--accent-color);
 }
 
 .header-mail,
@@ -96,7 +100,15 @@ body {
   font-style: normal;
 }
 
-/* --------HERO SECTION------ */
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+/* --------HERO SECTION------ * */
+
 .hero {
   background-color: var(--backround-section-dark);
 }
@@ -109,14 +121,40 @@ body {
 }
 .button-hero {
   color: #fff;
-  background-color: var(--accent-color);
+  background-color: var(--bt-bg-color);
   line-height: 1.18;
+}
+
+.button-hero:hover .button-hero:focus {
+  background-color: var(--bt-bg-color);
+}
+
+.button-hero:active {
+  background-color: var(--bt-acc-color);
 }
 
 /* --------Advantages section------ */
 /* --------Examples section------ */
 
+.advantages-title,
+.team-name,
+.works-items {
+  color: var(--title-text-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.team-title,
+.examples-title {
+  color: var(--title-text-color);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
 /* --------Team section------ */
+
 .team {
   background-color: var(--background-section-light);
 }
@@ -125,7 +163,8 @@ body {
   background-color: var(--primary-white-color);
 }
 
-/* -----------Portfolio-------- */
+/* -----------PORTFOLIO SECTION-------- */
+
 .button-portfolio {
   color: var(--accent-color);
   background-color: #f4f4fd;
