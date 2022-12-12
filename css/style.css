@@ -1,5 +1,7 @@
 :root {
   --background-color: #fff;
+  --backround-section-dark: #2e2f42;
+  --background-section-light: #f4f4fd;
 
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
@@ -95,6 +97,10 @@ body {
 }
 
 /* --------HERO SECTION------ */
+.hero {
+  background-color: var(--backround-section-dark);
+}
+
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 600;
@@ -111,6 +117,9 @@ body {
 /* --------Examples section------ */
 
 /* --------Team section------ */
+.team {
+  background-color: var(--background-section-light);
+}
 .team-photo,
 .works-items {
   background-color: var(--primary-white-color);
@@ -124,9 +133,17 @@ body {
 }
 
 .button.button-portfolio:hover,
-.button.button-portfolio:focus {
+.button.button-portfolio:focus,
+.button.button-portfolio:active {
   color: #fff;
   background-color: var(--accent-color);
+}
+
+.works-sphere,
+.works-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .works-sphere {
@@ -135,9 +152,13 @@ body {
 
 .works-text {
   color: #f4f4fd;
+  background-color: var(--accent-color);
 }
 
-/* --------Fotter------ */
+/* --------FOOTER------ */
+.footer {
+  background-color: var(--backround-section-dark);
+}
 .footer > .logo {
   color: #f4f4fd;
 }
