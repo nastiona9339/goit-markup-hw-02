@@ -124,8 +124,7 @@ body {
 }
 
 .button-hero:hover,
-.button-hero:focus,
-.button-hero:active {
+.button-hero:focus {
   background-color: var(--bt-acc-color);
 }
 
