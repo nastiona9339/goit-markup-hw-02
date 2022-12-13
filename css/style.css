@@ -20,7 +20,6 @@ body {
   color: var(--primary-text-color);
   background-color: var(--background-color);
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -60,9 +59,8 @@ body {
 
 .logo {
   color: #2e2f42;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
@@ -125,10 +123,8 @@ body {
   line-height: 1.18;
 }
 
-.button-hero:hover .button-hero:focus {
-  background-color: var(--bt-bg-color);
-}
-
+.button-hero:hover,
+.button-hero:focus,
 .button-hero:active {
   background-color: var(--bt-acc-color);
 }
@@ -178,8 +174,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.works-sphere,
-.works-text {
+.works-sphere {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -187,11 +182,6 @@ body {
 
 .works-sphere {
   color: var(--primary-text-color);
-}
-
-.works-text {
-  color: #f4f4fd;
-  background-color: var(--accent-color);
 }
 
 /* --------FOOTER------ */
